@@ -7,7 +7,7 @@ const articleHearts = document.querySelectorAll(".like-glyph");
 
 function likeCallback(e) {
   const heart = e.target;
-  mimicServerCall("bogusUrl")
+  mimicServerCall()
     .then(function(){
       if ( heart.innerText === EMPTY_HEART) {
         heart.innerText = FULL_HEART;
